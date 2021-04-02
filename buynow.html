@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuyNow</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styless.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#00aba9" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body class="bod">
+  <div class="Buycontainer">
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="manufacturers.html">Manufacturers</a></li>
+        <li><a href="buynow.html">BuyNow</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+
+    <div class="Scontainer">
+      <section class="container content-section">
+        <h2 class="section-header">SHOP NOW!</h2>
+        <br />
+        <div class="dropdown">
+          <h1>Choose Manufacturer</h1>
+          <select id="changeManu" onchange="dropdown()">
+            <option value="EP">Eco Products SL</option>
+            <option value="EW">Ecoware</option>
+            <option value="TD">Trickledown</option>
+            <option value="BE">BackToEarth</option>
+          </select>
+        </div>
+        <div class="manu" id="EcoProd">
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Bags - Eco-Products SL</span>
+              <img class="shop-item-image" src="Images/bag.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR1000</span>
+                <div class="size" id="sizeSec">
+                  <input class="radiosize" type="radio" value="0" name="size" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Plates - Eco-Products SL</span>
+              <img class="shop-item-image" src="Images/plate.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size1" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size1" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size1" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Mugs - Eco-Products SL</span>
+              <img class="shop-item-image" src="Images/mug.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2500</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size2" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size2" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size2" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Soap - Eco-Products SL</span>
+              <img class="shop-item-image" src="Images/soap.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR800</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size3" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size3" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size3" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="manu2" id="Ecoware">
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Bags - Ecoware Lanka</span>
+              <img class="shop-item-image" src="Images/bag.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR1000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size4" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size4" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size4" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Plates - Ecoware Lanka</span>
+              <img class="shop-item-image" src="Images/plate.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size5" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size5" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size5" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Mugs - Ecoware Lanka</span>
+              <img class="shop-item-image" src="Images/mug.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2500</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size6" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size6" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size6" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Soap - Ecoware Lanka</span>
+              <img class="shop-item-image" src="Images/soap.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR800</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size7" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size7" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size7" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="manu3" id="Trick">
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Bags - Trickledown</span>
+              <img class="shop-item-image" src="Images/bag.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR1000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size8" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size8" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size8" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Plates - Trickledown</span>
+              <img class="shop-item-image" src="Images/plate.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size9" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size9" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size9" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Mugs - Trickledown</span>
+              <img class="shop-item-image" src="Images/mug.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2500</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size10" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size10" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size10" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Soap - Trickledown</span>
+              <img class="shop-item-image" src="Images/soap.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR800</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size11" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size11" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size11" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="manu4" id="BackTo">
+          <div class="shop-items">
+            <div class="shop-item">
+              <span class="shop-item-title">Bags - BacktoEarth</span>
+              <img class="shop-item-image" src="Images/bag.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR1000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size12" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size12" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size12" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Plates - BacktoEarth</span>
+              <img class="shop-item-image" src="Images/plate.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2000</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size13" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size13" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size13" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Mugs - BacktoEarth</span>
+              <img class="shop-item-image" src="Images/mug.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR2500</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size14" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size14" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size14" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Soap - BacktoEarth</span>
+              <img class="shop-item-image" src="Images/soap.jpg" />
+              <div class="shop-item-details">
+                <span class="shop-item-price">LKR800</span>
+                <div class="size" id="">
+                  <input class="radiosize" type="radio" value="0" name="size15-" id="" checked />
+                  <label for="small">S</label>
+                  <input class="radiosize" type="radio" value="2500" name="size15" id="" />
+                  <label for="medium">M</label>
+                  <input class="radiosize" type="radio" value="5000" name="size15" id="" />
+                  <label for="large">L</label>
+                </div>
+                <button class="btn btn-primary shop-item-button" type="button">
+                  ADD TO ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Extras</h2>
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Eco-Friendly Packaging</span>
+            <img class="shop-item-image" src="Images/packaging.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">LKR500</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO ORDER
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Eco-Friendly Greeting Cards</span>
+            <img class="shop-item-image" src="Images/greeting.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">LKR1000</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO ORDER
+              </button>
+            </div>
+          </div>
+          <div class="shop-item">
+            <span class="shop-item-title">Eco-Friendly Decorations</span>
+            <img class="shop-item-image" src="Images/decoration.jpg" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">LKR1500</span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO ORDER
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">LKR0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">
+          Place Order
+        </button>
+      </section>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="manufacturers.html">Manufacturers</a></li>
+        <li><a href="buynow.html">BuyNow</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <h4>About Us:</h4>
+      <div class="finfo">
+        <p>ECO-FRIENDLY PRODUCTS PVT(LTD)</p>
+        <p>Address: No. 388, Union Place, Colombo 02, Sri Lanka.</p>
+        <p>Hotline: +94 117 675 100, +94 112 687 249</p>
+        <p>Email: info@apiit.lk</p>
+      </div>
+
+      <div class="copy">
+        <p>&copyChamara Peiris 077 123 4567</p>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/buynow.js"></script>
+</body>
+
+</html>
